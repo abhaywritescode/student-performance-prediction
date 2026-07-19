@@ -17,9 +17,9 @@ def index():
             data = scaler.transform(data)
 
             result = model.predict(data)
-            return f"<h1 style='color: green'>Analyzed performance for the student is approximately {result[0]:0.2f}%. Real performance could be close to this value.</h1><a href='/'>Return home</a>"
+            return render_template("result.html", result=result)
         except Exception as e:
-            return f"<h1 style='color: red'>Error: {e}</h1><a href='/'>Return home</a>"
+            return f"<b>Error:</b> {e}"
     
     return render_template("index.html")
 
