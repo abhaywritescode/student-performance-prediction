@@ -2,6 +2,8 @@
 
 A lightweight, machine learning-powered web application that estimates student exam scores based on 11 distinct academic and lifestyle factors.
 
+![Screenshot](images/screenshot.png)
+
 ## 🧠 The Model: Why Linear Regression?
 
 While several machine learning algorithms were tested during development, **Linear Regression** consistently performed the best for this specific use case.
